@@ -6,8 +6,8 @@ import java.sql.SQLException;
 public class UserSQLInjectionSample {
 	// JDBC URL, username, and password of MySQL server
 	private static final String URL = "jdbc:mysql://localhost:3306/springbatch";
-	private static final String USER = "User1";
-	private static final String PASSWORD = "1234";
+	private static final String USER = "";
+	private static final String PASSWORD = "";
 	// JDBC variables for opening, closing, and managing connection
 	private static Connection connection;
 	private static PreparedStatement preparedStatement;
