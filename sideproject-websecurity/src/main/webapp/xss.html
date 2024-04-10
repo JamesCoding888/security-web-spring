@@ -1,0 +1,21 @@
+<!-- Vulnerable HTML Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XSS Vulnerable Page</title>
+</head>
+
+<body>
+	<h1>Welcome to our website!</h1>
+	<p>This is a vulnerable page where an XSS attack can be demonstrated.</p>
+	<script>
+		// Example of a vulnerable script that echoes user input without proper sanitization
+		var userInput = decodeURIComponent(window.location.hash.substr(1));
+		document.write("<p>Your input: " + userInput + "</p>");
+	</script>
+</body>
+
+</html>
