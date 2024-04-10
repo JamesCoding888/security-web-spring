@@ -12,10 +12,14 @@
 	<h1>Welcome to our website!</h1>
 	<p>This is a vulnerable page where an XSS attack can be demonstrated.</p>
 	<script>
-		// Example of a vulnerable script that echoes user input without proper sanitization
-		var userInput = decodeURIComponent(window.location.hash.substr(1));
-		document.write("<p>Your input: " + userInput + "</p>");
-	</script>
+    // Example of a vulnerable script that echoes user input without proper sanitization
+    var userInput = decodeURIComponent(window.location.hash.substr(1));
+    // Exploit the vulnerability by executing arbitrary JavaScript code
+    // For demonstration purposes, let's alert 'XSS Attack!'
+    // In a real attack scenario, attackers might perform more harmful actions
+    // such as stealing cookies, redirecting users, or performing form submission
+    alert('XSS Attack!'); 
+</script>
 </body>
 
 </html>

